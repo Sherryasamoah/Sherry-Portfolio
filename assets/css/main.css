@@ -4781,4 +4781,32 @@ body {
 .button:hover {
   background-color: var(--color-secondary);
 }
+/* --- Resume Buttons Styling --- */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.resume-buttons .button.primary {
+  background-color: #84714F; /* your palette color */
+  border-color: #020202;
+  color: #E7ECEF;
+}
+
+.resume-buttons .button.primary:hover {
+  background-color: #99744A;
+  border-color: #99744A;
+}
+/* Side image for full story section */
+.side-image {
+    width: 100%;       /* fits the column */
+    max-width: 400px;  /* prevents it from being too huge */
+    height: auto;      /* keeps aspect ratio */
+    object-fit: cover; /* fills nicely without distortion */
+    border-radius: 5px; /* optional for rounded corners */
+    display: block;    /* removes inline spacing issues */
+    margin: 0 auto;    /* centers in column */
+}
 
