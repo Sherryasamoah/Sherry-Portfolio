@@ -1,5 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+:root {
+  --primary: #3AAFA9;
+  --secondary: #17252A;
+  --background: #FEFFFF;
+  --text: #2B7A78;
+}
 
 /*
 	Massively by HTML5 UP
@@ -31,6 +37,24 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	 background-color: var(--background);
+  color: var(--text);
+}
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+.button {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.button:hover {
+  background-color: var(--secondary);
 }
 
 ol, ul {
@@ -165,6 +189,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+		 color: var(--secondary);
 		}
 
 	strong, b {
@@ -4687,3 +4712,73 @@ input, select, textarea {
 		}
 
 	}
+
+	/* === Custom Color Palette === */
+:root {
+  --color-bg: #E7ECEF;
+  --color-primary: #84714F;
+  --color-secondary: #99744A;
+  --color-dark: #414A37;
+  --color-light: #DBC2A6;
+}
+
+/* === Body and General Text === */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+}
+
+/* === Intro Section === */
+#intro {
+  background: url("../images/back.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+	
+	background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 5em 2em;
+}
+#intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(65, 74, 55, 0.7); /* dark overlay using your “dark” color */
+  z-index: 0;
+}
+
+#intro * {
+  position: relative;
+  z-index: 1;
+}
+
+#intro h1, #intro h2, #intro p {
+  color: var(--color-light);
+}
+
+/* === Footer Section === */
+#footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 4em 2em;
+}
+
+#footer a {
+  color: var(--color-light);
+}
+
+#footer a:hover {
+  color: var(--color-primary);
+}
+
+/* === Buttons === */
+.button {
+  background-color: var(--color-primary);
+  color: #fff !important;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+}
+body { border: 5px solid red !important; }
