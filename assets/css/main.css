@@ -4730,7 +4730,7 @@ body {
 
 /* === Intro Section === */
 #intro {
-  background: url("../images/back.jpg") no-repeat center center;
+  background: url("../../images/back.jpg") no-repeat center center;
   background-size: cover;
   min-height: 100vh;
   position: relative;
